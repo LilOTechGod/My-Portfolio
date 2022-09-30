@@ -1,20 +1,31 @@
-* {
+
+body {
     margin:0;
-    padding:0;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 nav {
-    position:fixed;
-    background-color: red;
+
+    background-color: rgb(55, 55, 55);
     width:100%;
-    line-height: 25px;
-    height: 70px;
+    color: #fff;
+    flex-wrap: wrap;
+    height: max-content;
+    
+
+}
+
+.borderbox {
+  background-color: hsl(180, 82%, 38%);
+  width: 29%;
+  height: 15%;
 }
 
 nav h1 {
     text-align: left;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     position: relative;
     top: 20px;
 }
@@ -23,6 +34,11 @@ nav ul {
     text-align: right;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 45px;
 }
 
 nav li {
@@ -31,66 +47,132 @@ nav li {
 }
 
 #hero {
-    background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res40/200000/200601-San-Luis-Potosi.jpg");
+    background-image: url("https://t3.ftcdn.net/jpg/04/53/01/70/360_F_453017066_mabdo3zBoLuYMKSqO8hMvHrblIO2VmwG.jpg");
     min-height: 45vh;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 11%;
 }
 
 #hero h2 {
     position: relative;
-    top:25vh;
+    top:30vh;
     left:75%;
+    background: turquoise;
+    height: 50px;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap:wrap;
-        position: relative;
-    left: -150px;
-}
-
-.flex-item {
+.aboutme {
     display:flex;
-    min-height:150px;
-    max-height: 150px;
-    flex-basis: 35%;
-    border: 5px solid green;
-    margin: 20px;
+    padding: 30px;
+    text-align: right;
+    align-items: center;
 }
 
-.flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+.aboutme p {
+    width: 80%;
+    padding-left: 30px;
+    
 }
 
-.pic1 {
- background-image: url("https://media.geeksforgeeks.org/wp-content/cdn-uploads/directories.png");   
+.container {
+  flex: 5;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.pic2 {
-    background-image: url("https://dev-updates-uploads.s3.ap-south-1.amazonaws.com/1645614757378-HTML.jpg");   
-   }
+.aside {
+  display:flex;
+  flex-direction: column;
+  flex:1%;
+  border-right: solid darkgrey;
+}
 
-   .pic3 {
-    background-image: url("https://techwiser.com/wp-content/uploads/2022/03/Websites-to-find-HTML-and-CSS-Projects.png");   
-    position: relative;
-    left: 25%;
-    }
+.card {
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+    margin: 5px;
+    border: 5px solid;
+    min-height: 300px;
+    background-image: url("https://image.shutterstock.com/image-photo/nature-landscape-view-beautiful-tropical-260nw-1940029552.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
-   .pic4 {
-    background-image: url("https://www.freecodecamp.org/news/content/images/2022/07/joan-gamell-ZS67i1HLllo-unsplash.jpg");   
-   }
+  .card2 {
+    min-height: 100px;
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    display:flex;
+    flex:1 0 50%;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/2EHMRTbPrrjwfgeGyP429n-320-80.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
 
-   .pic5 {
-    background-image: url("https://cdn.searchenginejournal.com/wp-content/uploads/2021/03/javascript-seo-6058805daaa6a-1520x800.png");   
-    position: relative;
-    left: 25%;
-    }
+  .flex-wraper {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    flex: 25%;
+    
+  }
 
-   aside {
-    float:left;
-   }
+  .card3 {
+    min-height: 100px;
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    display:flex;
+    flex:1 0 50%;
+    background-image: url("https://image.shutterstock.com/image-photo/backgroundsblue-back-ground-light-blue-260nw-1437564890.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card4 {
+    min-height: 100px;
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    display:flex;
+    flex:1 0 50%;
+    background-image: url("https://i.ytimg.com/vi/4kXuo8uOwgg/maxresdefault.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+    flex: 25%;
+  }
+
+  .card5 {
+    min-height: 100px;
+    border: 5px solid cadetblue;
+    border-radius: 5px;
+    display:flex;
+    flex:1 0 50%;
+    background-image: url("https://media.newyorker.com/photos/60a5473498e3953d886a09fc/16:9/w_2560,h_1440,c_limit/Shouts-Outside.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+.footer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
 
 #li {
    display:inline;
@@ -98,48 +180,12 @@ nav li {
 }
 
 #ul {
-    text-align: right;
+    align-items: right;
 }
 
-.projects {
-    width:66%;
-    position: relative;
-    left: 33%;
+.header {
+  border-right: solid darkgrey;
 }
-
-p {
-    text-align: right;
-    padding: 10px 0px;
-    font-size: large;
-}
-
-aside {
-    text-align: right;
-    padding: 0px 5px;
-}
-
-.asideh4-2 {
-    padding: 44vh 0px;
-}
-
-div h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
-    color:rgb(23, 99, 23)
-}
-
-article p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px
-}
-
-section ul {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px
-}
-
-#contactme {
-
-    position: relative;
-    top: 263px;
+#border {
+  border-right: solid darkgrey;
 }
