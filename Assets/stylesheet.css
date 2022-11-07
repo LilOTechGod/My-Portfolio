@@ -19,7 +19,7 @@ nav {
 .borderbox {
   background-color: hsl(180, 82%, 38%);
   width: 29%;
-  height: 15%;
+  height: 75px;
 }
 
 nav h1 {
@@ -66,17 +66,26 @@ nav li {
     height: 50px;
 }
 
+.button {
+  background-color: hsl(180, 82%, 38%);
+}
+
 .aboutme {
     display:flex;
     padding: 30px;
     text-align: right;
     align-items: center;
+    justify-content: space-between
 }
 
 .aboutme p {
     width: 80%;
     padding-left: 30px;
     
+}
+
+.spacebetween {
+  
 }
 
 .container {
@@ -172,6 +181,7 @@ nav li {
     text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 #li {
